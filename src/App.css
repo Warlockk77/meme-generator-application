@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&family=Lato&family=Montserrat&family=Play:wght@400;700&family=Poppins&family=Varela+Round&display=swap');
+
+
+
+*{
+  box-sizing:border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #bed2dc;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  width:35vw;
+  background-color:white;
+  border-radius:5px;
+  margin-top: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  background: linear-gradient(90deg, #a45b13 1.18%, #146780 100%);
+  color:white;
+  padding: 20px;
+  border-top-left-radius:5px ;
+  border-top-right-radius:5px ;
+  
+}
+
+.header img{
+ width:75px;
+ margin-right: 6px;
+}
+
+.header--title {
+  font-size: 20px;
+  margin-right: auto;
+
+}
+
+.header--project {
+  font-size:12px ;
+  font-weight: 500;
+}
+
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+}
+
+.inputs {
+  display: grid;
+  grid-template:40px 40px / 2fr 2fr;
+  gap: 17px;
+  margin-top: 50px;
+
+
+}
+
+
+.inputs input{
+ border-radius: 5px;
+ border: 1px solid #D5D4D8;
+ text-indent: 5px;
+ width: 16.5vw;
+ outline: none;
+
+
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / -1;
+  border: none;
+  cursor: pointer;
+  width:34vw;
+  margin-top: -35px;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #c7cfd4;
+
+}
+.btn:hover {
+  background:linear-gradient(90deg, #a45b13 1.18%, #146780 100%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.button--img {
+  width: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.memeImage {
+  width:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+
+ 
+}
+.meme--image-container{
+  position: relative;
+  margin: auto;
+ 
+  
+
+ 
+}
+
+
+.meme--text{
+  width: 90%;
+  text-align: center;
+  word-wrap: break-word;
+  margin-left: 18px;
+ 
+  color: white;
+  font-size: 37px;
+  text-shadow:
+  "2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000";
+
+
+ 
+}
+
+
+
+
+
+
+
+
+.top {
+  position: absolute;
+  margin-top: -2px;
+
+  top: 0;
+  
+ 
+}
+.bottom {
+  position: absolute;
+  margin-bottom: -1px;
+  
+bottom:0;
+
+
+} 
+
+
+@media (max-width:600px) {
+  .App {
+    width: 95vw;
+
   }
-  to {
-    transform: rotate(360deg);
+  .inputs input{
+    width: 43.5vw;
+  }
+  .btn {
+    width: 90vw;
   }
 }
